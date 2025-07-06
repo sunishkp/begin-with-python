@@ -12,6 +12,10 @@
     position: relative; 
 }
 
+body , html {
+  overflow-x: hidden;
+}
+
 .top-nav{
     background-color: aliceblue;
 }
@@ -85,8 +89,231 @@ nav img {
 
 .main-text h1{
     font-size: 62px;
+    line-height: 1.4;
 }
 
-.main-text p1{
-    font-size: 40px;
+.main-text p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.line{
+  width: 150px;
+  height: 4px;
+  background: #f44336;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.learn-button{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.learn-button:hover{
+    border: 1 px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.why-learn {
+  background-color: #f5f5f5; 
+  padding: 60px 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.why-learn h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 5px;
+  color: #49497e;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.services h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.why-learn h4 {
+  font-size: 25px;
+  margin-top: 30px;
+  color: #333;
+}
+
+.feature-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  flex-wrap: nowrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-icon {
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.feature-box {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  border-color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  color: #444;
+  min-width: 200px;
+  max-width: 250px;
+  transition: transform 0.2s ease;
+  justify-content: center;
+  text-align: center;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-row{
+    margin-top: 2%;
+    padding: 0;
+    padding-bottom: 2%;
+    border-color:rgba(0, 0, 0, 0.8);
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service-row .option-box{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-row .option-box img{
+  width: 80%;
+}
+
+.services .service-row{
+  margin-top: 50px;
+}
+h3{
+  font-size: 25px;
+  color: #484872;
+  margin: 20px auto;
+}
+
+.option-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 5%;
+    padding: 20px 82px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.option-col:hover{
+    box-shadow: 0 0 50px 0px rgba(0,0,0,0.2);
+}
+.option-box {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+}
+
+.lesson-button,
+.video-button,
+.project-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.lesson-button:hover,
+.video-button:hover,
+.project-button:hover {
+  background-color: #d32f2f;
+}
+
+.workshop{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/w.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.explore-workshop{
+  width: 50%;
+  padding: 50px;
+  color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.explore-workshop h1 {
+  font-size: 7vmin;
+  margin: 50px;
+  margin-bottom: 0px;
+}
+
+.workshop p {
+  font-size: 1.2rem;            
+  color: #f0f0f0;               
+  line-height: 1.8;             
+  max-width: 700px;             
+  margin: 20px auto;            
+  text-align: center;          
+  font-weight: 300;             
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+}
+
+.workshop p1{
+  font-size: 1.6rem;
+  text-align: center;          
+  font-weight: 500;
+}
+
+.explore-workshop .line{
+  margin-top: 10px;
 }
