@@ -345,6 +345,11 @@ h3{
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.card1 img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .ready {
   min-height: 80vh;
   width: 100%;
@@ -429,4 +434,201 @@ h3{
   color: #555;
   width: 100%;
   text-align: center;
+}
+
+/* Styling for the About Page */
+.about {
+  padding: 80px 40px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/aboutusbg1.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.banner-content h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #484872;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.head_line{
+  width: 250px;
+  height: 4px;
+  background: #f44336;
+  margin: 10px auto;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.motto-banner {
+  background: linear-gradient(to right, #6a6aad, #b8b8f3);
+  color: black;
+  text-align: center;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.motto-banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+}
+
+.founder-full {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f4f4fa;
+  color: #333;
+}
+
+.founder-full h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.founder-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.founder-full h3 {
+  font-size: 2.2rem;
+  color: #484872;
+  margin-bottom: 20px;
+}
+
+.founder-full p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #444;
+}
+
+.lesson-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.lesson-card {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+}
+
+.lesson-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+  padding: 40px;
+}
+
+.lesson-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border: 4px solid #fff;
+}
+
+.lesson-info {
+  flex: 2 1 400px;
+  padding: 40px;
+  text-align: left;
+}
+
+.lesson-info h2 {
+  font-size: 2rem;
+  color: #484872;
+  margin-bottom: 10px;
+}
+
+.lesson-info h3 {
+  font-size: 1.5rem;
+  color: #f44336;
+  margin-bottom: 15px;
+}
+
+.lesson-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
 }
