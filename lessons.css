@@ -1,0 +1,102 @@
+.lesson-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.lesson-card {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+}
+
+.lesson-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+  padding: 40px;
+}
+
+.lesson-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border: 4px solid #fff;
+}
+
+.lesson-info {
+  flex: 2 1 400px;
+  padding: 40px;
+  text-align: left;
+}
+
+.lesson-info h2 {
+  font-size: 2rem;
+  color: #484872;
+  margin-bottom: 10px;
+}
+
+.lesson-info h3 {
+  font-size: 1.5rem;
+  color: #f44336;
+  margin-bottom: 15px;
+}
+
+.lesson-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.lesson-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #333;
+}
+
+.lesson-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.lesson-content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.lesson-content h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.lesson-content pre {
+  background-color: #1e1e1e;
+  text-align: left;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: monospace;
+}
+
+.lesson-content code {
+  background-color: #eee;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+}

@@ -5,11 +5,10 @@
     <meta name = "viewport" content="with=device-width, initial-scale=1.0">
     <title>Begin With Python</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lessons.css">
 </head>
 
 <body> 
-    <!-- Section 1: Introduction to Begin With Python -->
-    <!-- HEADER FOR THE TOP NAVIGATION BAR -->
     <header class="top-nav">
         <nav>
             <!-- LOGO -->
@@ -29,42 +28,35 @@
         </nav>
     </header>
 
-  <h2>Explore the Platform</h2>
-  <div class="card-container">
-    <div class="card">
-      <h3>Start Learning</h3>
-      <p>Go through core lessons designed to teach the basics clearly and interactively.</p>
-      <a href="#">View Lessons</a>
-    </div>
-    <div class="card">
-      <h3>Workshops</h3>
-      <p>Sign up for our live summer sessions and build projects with support.</p>
-      <a href="#">View Schedule</a>
-    </div>
-    <div class="card">
-      <h3>Video Library</h3>
-      <p>Watch step-by-step Python tutorials at your own pace.</p>
-      <a href="#">Watch Now</a>
-    </div>
-    <div class="card">
-      <h3>Projects</h3>
-      <p>Apply your skills with beginner-friendly games and tools.</p>
-      <a href="#">Try Projects</a>
-    </div>
-  </div>
+    <h1>Have a getting started section - like downloading the proper things etc</h1>
+    
+    <section class="lesson-section">
+    <div class="lesson-content">
+    <h2>🔁 Introduction to Loops in Python</h2>
+    <p>
+      Loops help you repeat actions without writing code multiple times. Python has two main types:
+      <strong><code>for</code></strong> loops and <strong><code>while</code></strong> loops.
+    </p>
 
-  <section class="lesson_section">
-    <div class="lesson-card">
-        <div class="lesson-image">
-        <img src="images/lessons.jpg" alt="Lesson 1">
-        </div>
-        <div class="lesson-info">
-        <h2>Lesson 1</h2>
-        <h3>Intro to Python</h3>
-        <p>here is the intro to Python</p>
-        </div>
-    </div>
-    </section>
+    <h3>📍 <code>for</code> Loop Example:</h3>
+    <pre><code>for i in range(5):
+    print("Hello!")</code></pre>
+    <p>This will print <em>"Hello!"</em> five times.</p>
 
+    <h3>📍 <code>while</code> Loop Example:</h3>
+    <pre><code>count = 0
+      while count < 3:
+          print("Learning Python!")
+          count += 1</code></pre>
+          <p>This runs while the condition <code>count &lt; 3</code> is true.</p>
+
+          <h3>🧠 Try This Challenge:</h3>
+          <p>
+            Write a <code>for</code> loop that prints the numbers 1 to 10.
+          </p>
+
+          <a href="StartCoding.html" class="final-button">Try It Yourself</a>
+        </div>
+      </section>
 </body>
 </html>
