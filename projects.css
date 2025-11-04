@@ -19,13 +19,13 @@
 }
 
 .project-content h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   margin: 0;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
-.project-content h4 {
+.project-content p {
   font-size: 1.5rem;
   margin: 0;
   color: #fff;

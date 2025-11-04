@@ -1,3 +1,30 @@
+.lessons-banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/bg-lunused.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.less-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.less-content p {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #fff;
+  }
+  
 .lesson-section {
   background-color: #f9f9f9;
   padding: 80px 20px;
