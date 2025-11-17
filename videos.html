@@ -1,36 +1,136 @@
-  <h2>Explore the Platform</h2>
-  <div class="card-container">
-    <div class="card">
-      <h3>Start Learning</h3>
-      <p>Go through core lessons designed to teach the basics clearly and interactively.</p>
-      <a href="#">View Lessons</a>
-    </div>
-    <div class="card">
-      <h3>Workshops</h3>
-      <p>Sign up for our live summer sessions and build projects with support.</p>
-      <a href="#">View Schedule</a>
-    </div>
-    <div class="card">
-      <h3>Video Library</h3>
-      <p>Watch step-by-step Python tutorials at your own pace.</p>
-      <a href="#">Watch Now</a>
-    </div>
-    <div class="card">
-      <h3>Projects</h3>
-      <p>Apply your skills with beginner-friendly games and tools.</p>
-      <a href="#">Try Projects</a>
-    </div>
-  </div>
+<!DOCTYPE html>
+<html>
 
-  <section class="lesson_section">
-    <div class="lesson-card">
-        <div class="lesson-image">
-        <img src="images/lessons.jpg" alt="Lesson 1">
-        </div>
-        <div class="lesson-info">
-        <h2>Lesson 1</h2>
-        <h3>Intro to Python</h3>
-        <p>here is the intro to Python</p>
-        </div>
+<head>
+    <meta name = "viewport" content="with=device-width, initial-scale=1.0">
+    <title>Begin With Python</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="videos.css">
+</head>
+
+<body> 
+    <header class="top-nav">
+        <nav>
+            <a href="index.html"><img src="images/BWPlogo.png"></a>
+            
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="lessons.html">LESSONS</a></li>
+                    <li><a href="videos.html">VIDEOS</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="workshops.html">WORKSHOPS</a></li>   
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul> 
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="video-banner">
+    <div class="less-content">
+        <h1>Begin With Python's Video Library</h1>
+        <div class="line"></div>
+        <p>Dive into quick, easy-to-follow videos that walk you through Python fundamentals.
+      <br>Discover key concepts step by step with simple explanations and hands-on-examples.</p>
     </div>
     </section>
+
+    <header class="video-header">
+    <div class="level-tab">
+      <h1>Beginner Videos 📹 </h1>
+    </div>
+    </header>
+    
+    <section class="video-section">
+    <div class="video-container">
+        <video controls width="100%">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-description">
+        <h2>Basic Python Syntax</h2>
+        <p>
+            This video covers the basics of Python, including variables, data types, 
+            and simple operations. Follow along to understand how these building 
+            blocks work together in real programs.
+        </p>
+    </div>
+  </section>
+
+  <div class="video-divider"></div>
+
+  <section class="video-section reverse">
+    <div class="video-descriptions">
+        <h2>Conditional Statements in Python</h2>
+        <p>
+            In this short lesson, we cover how Python uses <strong>if/elif/else</strong> branching to control
+            the flow of your program, evaluate multiple possibilities, and execute different blocks of code 
+            depending on which conditions are true. 
+        </p>
+    </div>
+
+    <div class="video-containers">
+        <video controls width="100%">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+  </section>
+
+  <div class="video-divider"></div>
+
+  <section class="video-section">
+    <div class="video-container">
+        <video controls width="100%">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-description">
+        <h2>Loops in Python</h2>
+        <p>
+            Learn how Python's <strong>for</strong> and <strong>while</strong> loops help you repeat actions effectively. 
+            This video walks you through common loop patterns, practical examples, and tips for writing clean, repeatable code. 
+        </p>
+    </div>
+  </section>
+
+  <div class="video-divider"></div>
+
+  <section class="video-section reverse">
+    <div class="video-descriptions">
+        <h2>Lists in Python</h2>
+        <p>
+            Discover how Python lists let you store and organize multiple values in one place. This video explains how to 
+            create lists, access elements, and use helful list methods for everyday programming tasks.  
+        </p>
+    </div>
+
+    <div class="video-containers">
+        <video controls width="100%">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+  </section>
+
+  <div class="video-divider"></div>
+
+    <footer class="site-footer">
+      <ul class="footerlinks">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="lessons.html">LESSONS</a></li>
+          <li><a href="videos.html">VIDEOS</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="workshops.html">WORKSHOPS</a></li>   
+          <li><a href="about.html">ABOUT</a></li> 
+      </ul>
+      <p>©2025 Begin With Python. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
