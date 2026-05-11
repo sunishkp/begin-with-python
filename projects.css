@@ -59,8 +59,30 @@
   font-size: 1.5rem;
 }
 
+
+/* Project 2 */
 .project:nth-of-type(2) h2::before {
   content: "🧮";
+}
+
+/* Project 3 */
+.project:nth-of-type(3) h2::before {
+  content: "🎮";
+}
+
+/* Project 4 */
+.project:nth-of-type(4) h2::before {
+  content: "📋";
+}
+
+/* Project 5 */
+.project:nth-of-type(5) h2::before {
+  content: "🏦";
+}
+
+/* Project 6 */
+.project:nth-of-type(6) h2::before {
+  content: "📝";
 }
 
 .project p {

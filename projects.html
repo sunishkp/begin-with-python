@@ -34,7 +34,7 @@
     <div class="project-content">
         <h1>Python Mini Projects</h1>
         <div class="line"></div>
-        <p>Take the time to try one of our simple Python mini projects to reinforce your learning</p>
+        <p>Take the time to try some of our Python mini projects to reinforce your learning</p>
     </div>
     </section>
     
@@ -43,7 +43,7 @@
     <div class="project">
         <h2>Project 1: Number Guessing Game</h2>
         <p><strong>Goal:</strong> Build a game where the computer picks a random number and the player tries to guess it.</p>
-        <p> This is a simple project that reinforces conditional statements, user input, and loops all in one place. </p>
+        <p> Beginner: This is a simple project that reinforces conditional statements, user input, and loops. </p>
         <h3>Steps to Build:</h3>
         <ol>
         <li>Import the <code>random</code> module.</li>
@@ -78,7 +78,7 @@
     <div class="project">
         <h2>Project 2: Basic Calculator</h2>
         <p><strong>Goal:</strong> Create a calculator that performs addition, subtraction, multiplication, or division.</p>
-        <p>This is a simple project that ... </p>
+        <p>Beginner: This project is a fun way to practice arithmetic operations, conditionals, and loops.</p>
         
         <h3>Steps to Build:</h3>
         <ol>
@@ -117,6 +117,199 @@
         print("Invalid input.")</code></pre>
         </details>
     </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+        <h2>Project 3: To-Do List Manager</h2>
+        <p><strong>Goal:</strong> Create a simple to-do list program where users can add, view, and remove tasks.</p>
+        <p>Intermediate: This project helps practice lists, loops, conditionals, and menu-driven programs in Python.</p>
+        
+        <h3>Steps to Build:</h3>
+        <ol>
+        <li>Create an empty list to store tasks.</li>
+        <li>Display a menu with options to add, remove, view, or quit.</li>
+        <li>Use a loop so the menu keeps appearing until the user exits.</li>
+        <li>Add tasks into the list using <code>append()</code>.</li>
+        <li>Remove tasks by checking if they exist in the list.</li>
+        <li>Display all current tasks with numbering.</li>
+        </ol>
+
+        <details>
+        <summary>View Solution Code (click to expand)</summary>
+        <pre><code>tasks = []
+
+    while True:
+        print("\nTo-Do List Manager")
+        print("1. View Tasks")
+        print("2. Add Task")
+        print("3. Remove Task")
+        print("4. Quit")
+
+        choice = input("Enter choice: ")
+
+        if choice == '1':
+            if len(tasks) == 0:
+                print("No tasks available.")
+            else:
+                print("\nTasks:")
+                for i in range(len(tasks)):
+                    print(f"{i + 1}. {tasks[i]}")
+
+        elif choice == '2':
+            task = input("Enter a new task: ")
+            tasks.append(task)
+            print("Task added.")
+
+        elif choice == '3':
+            task = input("Enter task to remove: ")
+
+            if task in tasks:
+                tasks.remove(task)
+                print("Task removed.")
+            else:
+                print("Task not found.")
+
+        elif choice == '4':
+            print("Goodbye!")
+            break
+
+        else:
+            print("Invalid choice.")</code></pre>
+        </details>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project">
+        <h2>Project 4: Quiz Game</h2>
+        <p><strong>Goal:</strong> Create a multiple-choice quiz game that keeps track of the user's score.</p>
+        <p>Intermediate: This project practices dictionaries, conditionals, loops, and score tracking.</p>
+        
+        <h3>Steps to Build:</h3>
+        <ol>
+        <li>Create several quiz questions with correct answers.</li>
+        <li>Ask the user each question one at a time.</li>
+        <li>Check if the user's answer is correct.</li>
+        <li>Keep track of the score using a variable.</li>
+        <li>Display the final score at the end.</li>
+        </ol>
+
+        <details>
+        <summary>View Solution Code (click to expand)</summary>
+        <pre><code>score = 0
+
+    print("Python Quiz Game")
+
+    answer = input("1. What keyword is used to create a function in Python? ")
+
+    if answer.lower() == "def":
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect.")
+
+    answer = input("2. What data type stores True or False values? ")
+
+    if answer.lower() == "boolean":
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect.")
+
+    answer = input("3. Which loop is used when the number of iterations is unknown? ")
+
+    if answer.lower() == "while":
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect.")
+
+    print("\nFinal Score:", score, "/ 3")</code></pre>
+        </details>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project">
+        <h2>Project 5: Banking System</h2>
+        <p><strong>Goal:</strong> Create a simple banking system that allows deposits, withdrawals, and balance checking.</p>
+        <p>Intermediate: This project practices loops, conditionals, arithmetic operations, and menu systems.</p>
+        
+        <h3>Steps to Build:</h3>
+        <ol>
+        <li>Create a starting balance variable.</li>
+        <li>Display banking options in a menu.</li>
+        <li>Allow the user to deposit money into the account.</li>
+        <li>Allow withdrawals only if enough balance exists.</li>
+        <li>Display the updated balance after transactions.</li>
+        <li>Use a loop so the menu repeats until the user exits.</li>
+        </ol>
+
+        <details>
+        <summary>View Solution Code (click to expand)</summary>
+        <pre><code>balance = 1000
+
+    while True:
+        print("\nBanking System")
+        print("1. Check Balance")
+        print("2. Deposit")
+        print("3. Withdraw")
+        print("4. Exit")
+
+        choice = input("Enter choice: ")
+
+        if choice == '1':
+            print("Current Balance: $", balance)
+
+        elif choice == '2':
+            amount = float(input("Enter deposit amount: "))
+            balance += amount
+            print("Deposit successful.")
+
+        elif choice == '3':
+            amount = float(input("Enter withdrawal amount: "))
+
+            if amount <= balance:
+                balance -= amount
+                print("Withdrawal successful.")
+            else:
+                print("Insufficient funds.")
+
+        elif choice == '4':
+            print("Exiting system.")
+            break
+
+        else:
+            print("Invalid choice.")</code></pre>
+        </details>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="project">
+        <h2>Project 6: Word Counter</h2>
+        <p><strong>Goal:</strong> Create a program that counts the number of words and characters in a sentence.</p>
+        <p>Intermediate: This project practices string methods, lists, and basic text processing.</p>
+        
+        <h3>Steps to Build:</h3>
+        <ol>
+        <li>Ask the user to enter a sentence.</li>
+        <li>Use <code>split()</code> to separate the sentence into words.</li>
+        <li>Count the number of words using <code>len()</code>.</li>
+        <li>Count the total number of characters.</li>
+        <li>Display both results to the user.</li>
+        </ol>
+
+        <details>
+        <summary>View Solution Code (click to expand)</summary>
+        <pre><code>sentence = input("Enter a sentence: ")
+
+    words = sentence.split()
+
+    word_count = len(words)
+    character_count = len(sentence)
+
+    print("Number of words:", word_count)
+    print("Number of characters:", character_count)</code></pre>
+        </details>
+    </div>
     </section>
 
     <footer class="site-footer">
@@ -128,7 +321,7 @@
             <li><a href="workshops.html">WORKSHOPS</a></li>   
             <li><a href="about.html">ABOUT</a></li> 
         </ul>
-        <p>©2025 Begin With Python. All rights reserved.</p>
+        <p>©2026 Begin With Python. All rights reserved.</p>
     </footer>
 </body>
 </html>
