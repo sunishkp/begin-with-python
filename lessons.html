@@ -383,6 +383,60 @@ my_dog.bark()</code></pre>
 
 <section class="lesson-section">
   <div class="lesson-content">
+    <h2>📚 Dictionaries in Python</h2>
+    <p>
+      Dictionaries store data in <strong>key-value pairs</strong>. 
+      They are useful for organizing and quickly accessing related information.
+    </p>
+
+    <h3>📍 Example:</h3>
+    <pre><code>student = {
+    "name": "Alice",
+    "grade": "A",
+    "age": 20
+}
+
+print(student["name"])
+print(student["grade"])</code></pre>
+
+    <p>
+      In this example, the dictionary stores information about a student. 
+      Each <code>key</code> (like <code>"name"</code>) is connected to a <code>value</code> (like <code>"Alice"</code>).
+    </p>
+
+    <h3>➕ Adding Values to a Dictionary</h3>
+    <p>
+      You can also create an <strong>empty dictionary</strong> and add values later.
+    </p>
+
+    <pre><code>car = {}
+
+car["brand"] = "Toyota"
+car["year"] = 2024
+car["color"] = "Blue"
+
+print(car)</code></pre>
+
+    <p>
+      Here, new key-value pairs are added one at a time using square brackets.
+    </p>
+
+    <h3>🧠 Try This Challenge:</h3>
+    <p>
+      Create a dictionary called <code>favorite_foods</code> with at least three foods and their cuisines. 
+      Then print one of the food names using its key.
+    </p>
+
+    <a href="https://pythontutor.com/visualize.html#mode=edit" class="final-button">Try It Yourself</a>
+  </div>
+</section>
+
+<div class="int_lesson-divider"></div>
+
+<div class="int_lesson-divider"></div>
+
+<section class="lesson-section">
+  <div class="lesson-content">
     <h2>📦 Modules and Imports</h2>
     <p>
       Python modules let you organize code into separate files. 
@@ -401,21 +455,38 @@ print(random.randint(1, 10))
 print(random.choice(["red", "green", "blue", "yellow", "orange"]))
 </code></pre>
 
-
     <p>
       The <code>math</code> module provides access to mathematical functions and constants. <br>
       The <code>random</code> module gives you tools to generate randomness such as numbers and choices. 
     </p>
 
+    <h3>🐢 Using the Turtle Library</h3>
+    <p>
+      Python also includes the <code>turtle</code> module, which lets you create drawings and animations using code.
+    </p>
+
+    <pre><code>import turtle
+
+pen = turtle.Turtle()
+
+pen.forward(100)
+pen.left(90)
+pen.forward(100)
+
+turtle.done()</code></pre>
+
+    <p>
+      In this example, the turtle moves forward, turns left, and moves again to draw an L-shape on the screen.
+    </p>
+
     <h3>🧠 Try This Challenge:</h3>
     <p>
-      Import the <code>random</code> module and print a random integer between 1 and 10 using <code>random.randint()</code>.
+      Import the <code>turtle</code> module and draw a square by moving the turtle forward and turning left four times.
     </p>
 
     <a href="https://pythontutor.com/visualize.html#mode=edit" class="final-button">Try It Yourself</a>
   </div>
 </section>
-
 
 <div class="int_lesson-divider"></div>
 
