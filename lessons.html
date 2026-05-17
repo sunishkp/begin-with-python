@@ -421,6 +421,30 @@ print(car)</code></pre>
       Here, new key-value pairs are added one at a time using square brackets.
     </p>
 
+    <h3>➖ Removing Values from a Dictionary</h3>
+    <p>
+      You can remove items from a dictionary using methods like 
+      <strong>del</strong>, <strong>pop()</strong>, or <strong>popitem()</strong>.
+    </p>
+
+    <pre><code>car = {
+        "brand": "Toyota",
+        "year": 2024,
+        "color": "Blue"
+    }
+
+# Remove a specific key
+del car["year"]
+
+# Remove and return a value
+removed_color = car.pop("color")
+
+# Remove the last inserted item
+car.popitem()
+
+print(car)
+</code></pre>
+
     <h3>🧠 Try This Challenge:</h3>
     <p>
       Create a dictionary called <code>favorite_foods</code> with at least three foods and their cuisines. 
