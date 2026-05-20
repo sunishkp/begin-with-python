@@ -167,11 +167,19 @@ else:
       Python has two main types of loops: <strong><code>for</code></strong> and <strong><code>while</code></strong>.
     </p>
 
-    <h3>📍 <code>for</code> Loop Example:</h3>
+    <h3>📍 <code>for range</code> Loop Example:</h3>
     <pre><code>for i in range(5):
     print("Hello!")</code></pre>
     <p>
       This prints <em>"Hello!"</em> five times. The <code>range(5)</code> function generates the sequence <code>0, 1, 2, 3, 4</code>.
+    </p>
+
+    <h3>📍 <code>for</code> Loop Example (Lists):</h3>
+    <pre><code>colors = ["red", "green", "blue", "yellow", "orange"]
+for color in colors:
+    print("color")</code></pre>
+    <p>
+      This prints each color in the color list. The function iterates through each color in the list with the <code>in</code> operator.
     </p>
 
     <h3>📍 <code>while</code> Loop Example:</h3>
@@ -210,11 +218,18 @@ fruits.append("orange")
 print("Updated list:", fruits)
 
 fruits.remove("banana")
-print("After removing banana:", fruits)</code></pre>
+print("After removing banana:", fruits)
+
+fruits.pop()
+print("After popping from fruits", fruits)
+</code></pre>
 
     <p>
       Lists are extremely useful for managing collections of data — from names and numbers to entire datasets. <br>
-      Lists in Python are incredibly versatile — you can add, remove, sort, reverse, or modify elements with ease. 
+      Lists in Python are incredibly versatile — you can add, remove, sort, reverse, or modify elements with ease. </p>
+      Append - Adds an element to the end of the list<br>
+      Remove - Removes the element from the list if it exists, if not, will throw an error<br>
+      Pop -  Removes the last element from the list<br>
     </p>
 
     <h3>🧠 Try This Challenge:</h3>
